@@ -2,5 +2,4 @@ numpy==1.14.3
 pandas==0.23.0
 Flask-Bootstrap==3.3.7.1
 Flask-WTF==0.14.2
-Jinja2==2.10
 WTForms==2.2.1
