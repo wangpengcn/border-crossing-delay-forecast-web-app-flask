@@ -1,0 +1,7 @@
+<label id="predictions">
+  {% for table in tables %}
+    <h4>{{titles[loop.index]}}</h4>
+    {{ table|safe }}
+  {% endfor %}
+  
+</label>
