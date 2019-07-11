@@ -44,5 +44,5 @@ def predictions():
 
 
 if __name__ == '__main__':
-    app.run(host="127.0.0.1", port=5000)
+    app.run(host="http://35.164.32.109", port=5000)
     
