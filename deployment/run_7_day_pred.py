@@ -16,7 +16,7 @@ from flask_bootstrap import Bootstrap
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'border-prediction'
 Bootstrap(app)
-FILE_PREDICTION = r'../results/7_day_forecast.csv'
+FILE_PREDICTION = r'./results/7_day_forecast.csv'
 
 df_preds = pd.read_csv(FILE_PREDICTION) 
 df_preds['Date Time'] = pd.to_datetime(df_preds['Date Time'])
