@@ -14,7 +14,7 @@ from flask_wtf import Form
 from flask_bootstrap import Bootstrap
 import json
 
-FILE_CONFIG = r'.\config.json'
+FILE_CONFIG = r'..\config.json'
 # Load config variables    
 with open(FILE_CONFIG) as json_config_file:
         config = json.load(json_config_file)
