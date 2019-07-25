@@ -6,4 +6,5 @@ WTForms==2.2.1
 wtforms_components==0.10.4
 xgboost==0.90
 requests==2.22.0
+scikit-learn==0.21.2
 
