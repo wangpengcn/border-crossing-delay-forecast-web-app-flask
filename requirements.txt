@@ -5,4 +5,5 @@ Flask-WTF==0.14.2
 WTForms==2.2.1
 wtforms_components==0.10.4
 xgboost==0.90
+requests==2.22.0
 
