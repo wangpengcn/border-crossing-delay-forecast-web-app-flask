@@ -22,7 +22,7 @@ from sklearn.metrics import mean_squared_error
 # Turn interactive plotting off
 plt.ioff()
 
-FILE_CONFIG = r'./config.json'
+FILE_CONFIG = r'.\\config.json'
 
 # Load border crossing wait time data from the folder
 def data_load():    
