@@ -4,5 +4,5 @@ Flask-Bootstrap==3.3.7.1
 Flask-WTF==0.14.2
 WTForms==2.2.1
 wtforms_components==0.10.4
-xgboost
+xgboost=1.0.0
 
