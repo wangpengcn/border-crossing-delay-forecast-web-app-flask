@@ -102,7 +102,7 @@ def train_model(train_data):
     #-------- Build XGBoost model BEGIN --------------
     xgb_regressor = xgb.XGBRegressor(random_state=29, n_jobs=-1)
     # Model parameters
-    xgb_parameters = {
+    xgb_parameters = {'objective': ['reg:squarederror'],
                       'n_estimators': [80, 100, 120],
                       'learning_rate': [0.01, 0.1, 0.5],
                       'gamma': [0, 0.01, 0.1],
