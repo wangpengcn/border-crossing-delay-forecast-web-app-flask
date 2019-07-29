@@ -46,6 +46,6 @@ def predictions():
     return render_template('predictions.html',tables=[df_pred_selected[['Date_time','Expected Delay in Minutes']].to_html(classes='data',index=False,header=False)], titles=df_pred_selected.columns.values)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':    
     app.run(host="0.0.0.0", port=5000)
     

@@ -150,6 +150,8 @@ def eval_model(model, test_data):
     #test_y = test_data['Delay']    
     # Get prediction on test data from the best iteration (default is the last iteration)
     test_probs = model.predict(test_X)
+    # Minimum wait time is 0
+    test_probs[test_probs<0] = 0
     # Concatenate prediction with test data
     pred_test = pd.concat([test_data, pd.DataFrame({'Expected Delay':test_probs})], axis=1)
     # Plot predictions (Expected Delay) vs labels (Delay)
@@ -192,6 +194,8 @@ def delay_forecast(model, data_forecast):
     result = pd.DataFrame(data_forecast['Date_time'],columns=['Date_time'])
     data_forecast = data_forecast.drop(['Delay','Date_time','Date'], axis=1)
     forecast_y = model.predict(data_forecast)
+    # Minimum wait time is 0
+    forecast_y[forecast_y<0] = 0
     future_forecast = pd.concat([data_forecast, pd.DataFrame({'Expected Delay in Minutes':forecast_y})], axis=1)
     result['Delay'] = forecast_y
     result.rename(columns={'Delay':'Expected Delay in Minutes'}, inplace=True)
