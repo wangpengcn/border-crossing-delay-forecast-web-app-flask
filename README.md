@@ -12,12 +12,15 @@ Clone GitHub project
 1. git clone https://github.com/wangpengcn/border-crossing-delay-forecast-web-app-flask.git border_forecast
 
 Get into project folder
+
 2. cd border_forecast
 
 Update script permission to allow read, write, and execute by current user
+
 3. chmod 700 run.sh 
 
 Run script to install python, create virtual environment, install necessary packages, and run the flask app
+
 4. ./run.sh
 
 ## Code
