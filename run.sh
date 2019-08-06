@@ -1,8 +1,9 @@
 #!/bin/bash
 #1. git clone https://github.com/wangpengcn/border-crossing-delay-forecast-web-app-flask.git border_forecast
 #2. cd border_forecast
-#3. ./run.sh
-# chmod 700 run.sh (read, write, and execute (run) the script -- but only your user)
+#3. chmod 700 run.sh (read, write, and execute (run) the script -- but only your user)
+#4. ./run.sh
+
 FOLDER_PATH="/home/ec2-user/border_forecast/"
 FOLDER_NAME="border_forecast"
 VENV_NAME="venv_border_forecast"
