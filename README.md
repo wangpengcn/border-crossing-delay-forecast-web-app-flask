@@ -36,9 +36,10 @@ Run script to install python, create virtual environment, install necessary pack
 - deployment/run_7_day_pred.py
 
 ## Run
-```cd border_forecast/deployment```
-```chmod 700 run_app.sh ```
-```./run_app.sh```
+
+1. ```chmod 700 ./deployment/run_app.sh ```
+
+2. ```./run_app.sh```
 
 ## Data
 Data collected from [Whatcom Council of Governments](http://www.cascadegatewaydata.com/Crossing/) since 2014.
