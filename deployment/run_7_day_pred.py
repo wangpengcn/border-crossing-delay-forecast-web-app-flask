@@ -58,7 +58,7 @@ def predictions():
     df_preds=session.get('df_preds')
     df_preds=pd.read_json(df_preds, dtype=False)
     date_selected = request.args.get('jsdata')
-    df_pred_selected = df_preds[df_preds['Date']==datetime.strptime(date_selected,'%Y-%m-%d').date()]
+    df_pred_selected = df_preds[df_preds['Date']==pd.Timestamp(date_selected).date()]
     return render_template('predictions.html',tables=[df_pred_selected[['Date_time','Expected Delay in Minutes']].to_html(classes='data',index=False,header=False)], titles=df_pred_selected.columns.values)
 
 

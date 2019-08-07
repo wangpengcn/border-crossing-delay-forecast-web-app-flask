@@ -37,7 +37,7 @@ Run script to install python, create virtual environment, install necessary pack
 
 ## Run
 
-1. ```chmod 700 ./deployment/run_app.sh ```
+1. ```chmod 700 ./run_app.sh ```
 
 2. ```./run_app.sh```
 
