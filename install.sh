@@ -1,8 +1,8 @@
 #!/bin/bash
+#Install
 #1. git clone https://github.com/wangpengcn/border-crossing-delay-forecast-web-app-flask.git border_forecast
 #2. cd border_forecast
 #3. chmod 700 run.sh (read, write, and execute (run) the script -- but only your user)
-#4. ./run.sh
 
 FOLDER_PATH="/home/ec2-user/border_forecast/"
 FOLDER_NAME="border_forecast"
@@ -30,7 +30,3 @@ $VENV_NAME/bin/pip3 install -r requirements.txt
 
 # schedule 05:00 everyday to rebuild prediction model and generate forecast for next 7 days
 (crontab -l 2>/dev/null; echo "0 5 * * * cd $FOLDER_PATH && $VENV_NAME/bin/python3 border_wait_time_forecast.py > /tmp/border.log") | crontab -
-
-#run flask
-export FLASK_APP=./deployment/run_7_day_pred.py
-$VENV_NAME/bin/python3 -m flask run --host=0.0.0.0

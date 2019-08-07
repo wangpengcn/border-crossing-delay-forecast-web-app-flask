@@ -28,10 +28,6 @@ class DatePicker(Form):
         self.date_min = date_min
         self.date_max = date_max        
     
-    #min_date = DateField(id='date_min_field',default=date_min)
-    #max_date = DateField(id='date_max_field',default=date_max)
-    #date_selected = DateField(id='datepick',default=date_max, validators=[DateRange(min=date_min, max=date_max)])
-    
 def read_json_file(filename):
     with open(filename) as json_file:
         obj = json.load(json_file)
