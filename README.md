@@ -37,6 +37,7 @@ Run script to install python, create virtual environment, install necessary pack
 
 ## Run
 ```cd border_forecast/deployment```
+
 ```./run_app.sh```
 
 ## Data
