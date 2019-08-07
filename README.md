@@ -25,7 +25,7 @@ Get into project folder
 
 Update script permission to allow read, write, and execute by current user
 
-3. ```chmod 700 run.sh ```
+3. ```chmod 700 install.sh ```
 
 Run script to install python, create virtual environment, install necessary packages, and schedule daily model rebuild
 
@@ -37,7 +37,7 @@ Run script to install python, create virtual environment, install necessary pack
 
 ## Run
 ```cd border_forecast/deployment```
-
+```chmod 700 run_app.sh ```
 ```./run_app.sh```
 
 ## Data
