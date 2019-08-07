@@ -11,7 +11,7 @@ due to its [requirement of minimum 4GB RAM](https://facebook.github.io/prophet/d
 
 Model is rebuilt daily using the new wait time records available from prior day.
 
-[Access Web App: Canada-US Border Crossing Wait Time Forecast](http://35.164.32.109:5000/)
+**[Access Web App: Canada-US Border Crossing Wait Time Forecast](http://35.164.32.109:5000/)**
 
 ## Install
 
