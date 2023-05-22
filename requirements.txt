@@ -7,5 +7,5 @@ Flask-WTF==0.14.2
 WTForms==2.2.1
 wtforms_components==0.10.4
 xgboost==0.90
-requests==2.22.0
+requests==2.31.0
 scikit-learn==0.21.2
